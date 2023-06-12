@@ -1,10 +1,17 @@
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: relative;
+}
 .drop-down {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 70px;
   height: 45px;
-  background-color: rgb(54, 57, 68);
+  background-color: rgb(34, 34, 34);
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -14,13 +21,16 @@
   height: 30px;
 }
 .drop-down-list {
-  margin-top: 10px;
   border-radius: 10px;
   display: inline-flex;
   flex-direction: column;
-  background-color: rgb(54, 57, 68);
+  background-color: rgb(39, 40, 46);
   display: none;
   cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  top: 60px;
+  left: 30px;
 }
 .drop-down-item {
   display: flex;
@@ -39,4 +49,35 @@
 .drop-down-item img {
   width: 16px;
   height: 16px;
+}
+.header-input {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(34, 34, 34);
+  height: 35px;
+  color: white;
+  outline: none;
+}
+
+.main-title a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.nav-bar {
+  background-color: rgb(54, 57, 68);
+}
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-input i {
+  color: white;
+  z-index: 3;
+  position: absolute;
+  left: 150px;
+  cursor: pointer;
 }
